@@ -44,7 +44,7 @@ classdef Plotter < handle
             x_ticks = sprintf('%.3f,', xticks);
             x_ticks = x_ticks(1:end-1);
             x_ticklabels_arr = xticklabels;
-            x_ticklabels = sprintf('{%.3f},', x_ticklabels_arr{:});
+            x_ticklabels = sprintf('{%s},', x_ticklabels_arr{:});
             x_ticklabels = x_ticklabels(1:end-1);
             
             history = points.GetHistory();
